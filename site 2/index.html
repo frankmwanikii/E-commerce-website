@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koraa - Custom Branded Merchandise</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Koraa</a>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="design-upload.html">Custom Design</a></li>
+        </ul>
+      </nav>
+      <div class="cart-icon">
+        <a href="cart.html">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </a>
+      </div>
+      <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <nav class="mobile-nav">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="design-upload.html">Custom Design</a></li>
+      <li><a href="cart.html">Cart</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Custom Branded Merchandise</h1>
+        <p>Create your own unique designs on our premium quality products</p>
+        <a href="products.html" class="btn">Shop Now</a>
+        <a href="design-upload.html" class="btn btn-outline">Upload Your Design</a>
+      </div>
+    </section>
+
+
+
+    <section class="shopping-cart">
+        <div class="container">
+          <h1>Your Shopping Cart</h1>
+          <div class="cart-grid">
+            <div class="cart-items" id="cart-items">
+              <!-- Cart items loaded via JS -->
+            </div>
+            <div class="cart-summary">
+              <h2>Order Summary</h2>
+              <div class="summary-details" id="cart-summary">
+                <!-- Summary loaded via JS -->
+              </div>
+              <a href="checkout.html" class="btn checkout-btn">Proceed to Checkout</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Include this script at the bottom -->
+      <script src="js/cart.js"></script>
+
+    <section class="featured-products">
+      <div class="container">
+        <h2>Featured Products</h2>
+        <div class="product-grid" id="featured-products">
+          <!-- Products loaded via JS -->
+        </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <h2>Shop By Category</h2>
+        <div class="category-grid">
+          <a href="products.html?category=tshirt" class="category-card">
+            <img src="assets/images/tshirt-category.jpg" alt="T-Shirts">
+            <h3>T-Shirts</h3>
+          </a>
+          <a href="products.html?category=hoodie" class="category-card">
+            <img src="assets/images/hoodie-category.jpg" alt="Hoodies">
+            <h3>Hoodies</h3>
+          </a>
+          <a href="products.html?category=mug" class="category-card">
+            <img src="assets/images/mug-category.jpg" alt="Mugs">
+            <h3>Mugs</h3>
+          </a>
+          <a href="products.html?category=cap" class="category-card">
+            <img src="assets/images/cap-category.jpg" alt="Caps">
+            <h3>Caps</h3>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-section">
+        <h3>About Koraa</h3>
+        <p>Your premier destination for custom branded merchandise.</p>
+      </div>
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="design-upload.html">Custom Design</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact Us</h3>
+        <p>Email: info@koraa.com</p>
+        <p>Phone: +1 (123) 456-7890</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; <span id="year"></span> Koraa. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+</body>
+</html>
